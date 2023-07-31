@@ -1,0 +1,109 @@
+* {
+    font-family: Verdana, Arial, sans-serif;
+  }
+  body {
+    text-align: center;
+  }
+  body > div {
+    margin: 20px;
+  }
+  a:link {
+    color:#000;
+    text-decoration: none;
+  }
+  a:visited {
+    color:#000;
+  }
+  a:hover {
+    color:#33F;
+  }
+  select {
+    font-size: 1em;
+  }
+  
+  .final {
+    color: black;
+    padding-right: 3px; 
+  }
+  .interim {
+    color: gray;
+  }
+  .info {
+    font-size: 14px;
+    color: #777;
+    display: none;
+  }
+  
+  #headline {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  #info {
+    font-size: 1.2em;
+    color: #777;
+    visibility: hidden;
+  }
+  #results {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 15px;
+    min-height: 150px;
+  }
+  #start_button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #language {
+    font-size: 1.2em;
+  }
+
+/* Microphone icon inside the start button */
+#start_button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #start_button svg {
+    width: 50px; /* Adjust the size of the SVG icon as needed */
+    height: 50px;
+    fill: #fff; /* Change the color of the microphone icon as desired */
+  }
+  #start_button_container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Pulse animation when recording */
+  @keyframes pulse-animation {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 red;
+    }
+    70% {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+  
+  .start_button_default{
+    background-color: #007bff; /* Change the color as desired */
+  }
+  .start_button_pulse {
+    background: red;
+    background-color: red;
+    animation: pulse-animation 1.5s infinite;
+  }
+  
+ 
+  
